@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+	table{
+		font-family: arial;
+	border-collapse: collapse;
+	width: 100%;
+
+}
+th,td{
+		font-size:20px;
+		text-align:left;
+		padding: 8px;
+
+	}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+form{
+	margin-top: 40px;
+}
+button{
+	color: red;
+	background-color: yellow;
+}
+h4{
+	padding:40px;
+}
+script{
+	margin-top: 40px;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<th>College</th>
+<th>Course Duration</th>
+<th>Degrees Offered</th>
+</tr>
+<tr>
+<td>MIT</td>
+<td>4 years</td>
+<td>BTech,Arch</td>
+</tr>
+<tr>
+<td>IIT</td>
+<td>4years</td>
+<td>BTech</td>
+</tr>
+</table>
+<form>
+First Name: <input type="text" name="FirstName" value=" "><br>
+Last Name: <input type="text" name="LastName" value=" "><br>
+<input type="submit" value="Submit">
+</form>
+<h4><u>COLOUR CODES</u></h4>
+<input type="color" id="myColor">
+<p>Select any colour to know their hexdecimal code</p>
+<button onclick="func()"> Select</button>
+<p id="demo">
+<script>
+var x=document.getElementById("myColor").value;
+document.getElementById("demo").innerHTML=x;
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
