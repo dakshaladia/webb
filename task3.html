@@ -63,12 +63,14 @@ Last Name: <input type="text" name="LastName" value=" "><br>
 <input type="color" id="myColor">
 <p>Select any colour to know their hexdecimal code</p>
 <button onclick="func()"> Select</button>
-<p id="demo">
+<p id="demo"></p>
 <script>
+function func(){
 var x=document.getElementById("myColor").value;
-document.getElementById("demo").innerHTML=x;
-</script>
 
+document.getElementById("demo").innerHTML=x;
+}
+</script>
 </body>
 </html>
 
